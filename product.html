@@ -11,6 +11,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- 左侧公共栏 -->
     <div class="aside">
         <div class="one">
             <p>黑马over</p>
@@ -22,11 +23,11 @@
         <div class="nav">
             <ul>
                 <li>
-                   <a href="user.html" ><i class="glyphicon glyphicon-user"></i>
+                   <a href="user.html" ><i class="glyphicon glyphicon-user lazy"></i>
                     <span>用户管理</span></a> 
                 </li>
                 <li>
-                   <a href="JavaScript:0" class="two"><i class="glyphicon glyphicon-list "></i>
+                   <a href="JavaScript:0" class="two"><i class="glyphicon glyphicon-list lazy "></i>
                     <span>分类管理</span></a> 
                     <div class="child">
                         <a href="first.html"> 一级分类 </a>
@@ -34,25 +35,48 @@
                     </div>
                 </li>
                 <li>
-                   <a href="JavaScript:0" class="current"><i class="glyphicon glyphicon-tags"></i>
+                   <a href="product.html" class="current"><i class="glyphicon glyphicon-tags lazy"></i>
                     <span>商品管理</span></a> 
                 </li>
+                <li>
+                        <a href="index.html"><i class="glyphicon glyphicon-home lazy"></i>
+                         <span>返回首页</span></a> 
+                     </li>
             </ul>
         </div>
     </div>
+    <!-- 上部公共栏 -->
     <div class="topad">
         <a href="JavaScript:0" class="pull-left  tl">
                 <i class="glyphicon glyphicon-align-justify"></i>
         </a>
-        <a href="" class="pull-right tr">
+        <a href="#" class="pull-right tr">
             <i class="glyphicon glyphicon-log-out"></i>
         </a>
         
     </div>
    <div class="main">
-
-   </div>
-
+   </div>    
+   
+   
+      <!-- Modal -->
+      <div class="modal fade" id="logoutModal" tabindex="-1">
+        <div class="modal-dialog modal-sm" >
+          <div class="modal-content">
+                <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">温馨提示</h4>
+                </div>
+                <div class="modal-body">
+                        <p style="color:#D2254E"><i class="glyphicon glyphicon-info-sign"></i>您确定要退出后台管理系统吗？</p>
+                      </div>
+                      <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                            <button type="button" class="btn btn-primary" id="logoutBtn">退出</button>
+                          </div>
+          </div>
+        </div>
+      </div>
 
 
 

@@ -67,6 +67,10 @@ a:active {
   height: 40px;
   line-height: 40px;
 }
+.aside .nav ul li a .lazy {
+  width: 14px;
+  height: 16px;
+}
 .aside .nav ul li a.current {
   background-color: #1d1f21;
   border-left: 3px solid #006699;
