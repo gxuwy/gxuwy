@@ -4,17 +4,17 @@ html {
   height: 2000px;
   background-color: pink;
 }
-body a,
-html a {
+a {
   color: #fff;
 }
-body a:hover,
-html a:hover {
+a:hover,
+a:visited,
+a:focus,
+a:active {
   color: #fff;
   text-decoration: none;
 }
-body .aside,
-html .aside {
+.aside {
   width: 180px;
   height: 100%;
   position: fixed;
@@ -23,9 +23,12 @@ html .aside {
   background-color: #222D32;
   text-align: center;
   z-index: 999;
+  transition: all 1s;
 }
-body .aside .one,
-html .aside .one {
+.aside.current {
+  left: -180px;
+}
+.aside .one {
   width: 100%;
   height: 50px;
   text-align: center;
@@ -35,44 +38,49 @@ html .aside .one {
   background-color: #367FA9;
   z-index: 666;
 }
-body .aside .user,
-html .aside .user {
+.aside .user {
   padding-top: 30px;
   height: 150px;
   text-align: center;
 }
-body .aside .user img,
-html .aside .user img {
+.aside .user img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   margin: 0 50px;
 }
-body .aside .user p,
-html .aside .user p {
+.aside .user p {
   color: #fff;
   font-size: 20px;
   margin-top: 10px;
 }
-body .aside .nav,
-html .aside .nav {
+.aside .nav {
   margin-top: 20px;
 }
-body .aside .nav ul,
-html .aside .nav ul {
+.aside .nav ul {
   list-style: none;
   padding: 0px;
 }
-body .aside .nav ul li a,
-html .aside .nav ul li a {
-  border: 3px solid transparent;
+.aside .nav ul li a {
+  display: block;
+  border-left: 3px solid transparent;
   height: 40px;
   line-height: 40px;
 }
-body .aside .nav ul li .child a,
-html .aside .nav ul li .child a {
+.aside .nav ul li a.current {
+  background-color: #1d1f21;
+  border-left: 3px solid #006699;
+}
+.aside .nav ul li .child {
+  display: none;
+}
+.aside .nav ul li .child a {
   display: block;
-  border: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+.aside .nav ul li .child a.current {
+  background-color: #1d1f21;
+  border-left: 3px solid #006699;
 }
 .topad {
   position: fixed;
@@ -82,6 +90,10 @@ html .aside .nav ul li .child a {
   height: 50px;
   background-color: #3C8DBC;
   width: 100%;
+  transition: all 1s;
+}
+.topad.current {
+  padding-left: 0;
 }
 .topad a {
   font-size: 16px;
