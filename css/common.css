@@ -119,6 +119,9 @@ a:active {
   padding-left: 15px;
   color: #33bab7;
 }
+.main .bottom {
+  margin-top: 20px;
+}
 .main .bottom .table.table-bordered th,
 .main .bottom .table.table-bordered td {
   text-align: center;
