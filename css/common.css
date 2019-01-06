@@ -1,8 +1,6 @@
 body,
 html {
   width: 100%;
-  height: 2000px;
-  background-color: pink;
 }
 a {
   color: #fff;
@@ -106,4 +104,24 @@ a:active {
   height: 100%;
   line-height: 50px;
   text-align: center;
+}
+.main {
+  padding-left: 180px;
+  padding-top: 50px;
+}
+.main .top {
+  margin: 20px 0;
+  height: 36px;
+  line-height: 36px;
+  background-color: #F5F5F5;
+}
+.main .top a {
+  padding-left: 15px;
+  color: #33bab7;
+}
+.main .bottom .table.table-bordered th,
+.main .bottom .table.table-bordered td {
+  text-align: center;
+  /* 设置单位格内容 垂直对齐方式 */
+  vertical-align: middle;
 }

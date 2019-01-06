@@ -1,0 +1,23 @@
+.main {
+  padding-left: 180px;
+  padding-top: 50px;
+}
+.main .top {
+  margin: 20px 0;
+  height: 36px;
+  line-height: 36px;
+  background-color: #F5F5F5;
+}
+.main .top a {
+  padding-left: 15px;
+  color: #33bab7;
+}
+.main .bottom {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.main .bottom .left,
+.main .bottom .right {
+  width: 48%;
+  height: 400px;
+}
